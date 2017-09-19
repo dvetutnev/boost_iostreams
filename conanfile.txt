@@ -1,0 +1,10 @@
+[requires]
+boost_headers/1.65.0@odant/prebuild
+boost_libraries/1.65.0@odant/prebuild
+
+[generators]
+cmake
+
+[imports]
+bin, *.dll -> ./bin # Copies all dll files from packages bin folder to my "bin" folder
+lib, *.dylib* -> ./bin # Copies all dylib files from packages lib folder to my "bin" folder
